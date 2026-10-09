@@ -1,0 +1,101 @@
+#entête{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 1px;
+}
+
+.text_sec{
+    color: #55504a;
+}
+#header_left{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo{
+    width: 60px;
+}
+
+
+#titre{}
+
+#resa{
+    background-color: #2e5a4c;
+    color: white;
+    border-radius: 6px;
+    font-weight: 600;
+    padding: 12px 20px;
+    text-decoration: none;
+    transition: 0.3 sec;
+}
+
+#resa:hover{
+    background-color: #20433a;
+}
+
+#onglets{
+    list-style: none;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+#onglets :hover{
+    
+}
+
+#details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bande{
+    width: 100%;
+    height: 30px; 
+    background: repeating-linear-gradient(
+        45deg,
+        #8b5a2b,
+        #8b5a2b 20px,
+        #a9744f 20px,
+        #a9744f 40px
+    );   
+}
+
+#contenu{
+    display: flex;
+    text-align: start;
+    justify-content: space-around;
+}
+
+#it_if{
+    text-align: justify
+    
+}
+.pages{
+    list-style: none;
+    margin: 0px 0px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+
+.contact_link{
+    text-decoration: none;
+    color: white;
+}
+
+#pied{
+    background-color:#55504a;
+    color:white ;
+    height: 235px;
+}
+
+h5{
+    text-align: start;
+}
+
+.bas_page{
+    text-align: center;
+}
