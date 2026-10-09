@@ -3,6 +3,7 @@
 }
 
 #entête{
+    background-color: #dad6ce;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,9 +24,6 @@
     width: 60px;
 }
 
-
-#titre{}
-
 #resa{
     background-color: #2e5a4c;
     color: white;
@@ -38,6 +36,7 @@
 
 #resa:hover{
     background-color: #20433a;
+    cursor: pointer;
 }
 
 #onglets{
@@ -46,13 +45,41 @@
     justify-content: space-evenly;
 }
 
-#onglets :hover{
-    
+a{
+    text-decoration: none;
+    color: #55504a;
+}
+
+#details{
 }
 
 #details{
     display: flex;
     justify-content: space-between;
+}
+
+#accroche{
+    margin-bottom: 30px;
+}
+
+#content1{
+    margin: 35px;
+}
+
+#map{
+    margin: 50px;
+}
+
+h2{
+    margin-left: 35px;
+}
+
+#content2{
+    margin: 35px;
+}
+
+#infos{
+    background-color: #dad6ce;
 }
 
 .bande{
