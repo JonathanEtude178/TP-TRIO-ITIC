@@ -1,5 +1,11 @@
 :root{
     font-family: Roboto;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
 }
 
 #entête{
@@ -50,7 +56,9 @@ a{
     color: #55504a;
 }
 
-#details{
+#titre{
+    background-color: #dad6ce;
+    width: 100%;
 }
 
 #details{
@@ -80,6 +88,7 @@ h2{
 
 #infos{
     background-color: #dad6ce;
+    height: 380px;
 }
 
 .bande{
