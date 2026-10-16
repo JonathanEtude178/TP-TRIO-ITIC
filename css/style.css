@@ -198,3 +198,19 @@ details p {
     margin: 35px;
 }
 
+.cadre{
+    display:flex;
+    justify-content: space-around;
+}
+
+#entête3{
+    padding: 20px ;
+}
+
+.coord_type{
+    padding-bottom: 20px;
+}
+
+.tt{
+    margin-top: 0;
+}

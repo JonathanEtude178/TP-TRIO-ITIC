@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-      <header id="entête">
+    <header id="entête">
         <div id="header_left">
             <img src="/img/logoITIC.jpg" alt="Logo d'ITIC Paris" class="logo">
 
@@ -23,7 +23,7 @@
     </header>
         <nav>
             <ul id="onglets">
-                <li> <a href="index.html">Accueil</a></li>
+                <li> <a href="accueil.html">Accueil</a></li>
                 <li> <a href="amphitheatre.html">L'amphithéâtre</a></li>
                 <li> <a href="equipements.html">Equipements</a></li>
                 <li> <a href="Galerie.html">Galerie</a></li>
@@ -40,49 +40,52 @@
                 <p>Une question, une visite, un devis à ajuster ? Écrivez-nous.</p>
             </section>
             <section id="content_contact">
-                <div class="coord_type">
-                    <h4>Votre message</h4>
-                       <form>
-                        <fieldset disabled>
-                            <legend>Votre message</legend>
-                                <div>
-                                    <label for="name">Nom complet&nbsp;:</label>
-                                    <input type="text" id="name">
-                                </div>
-                                <div>
-                                    <label for="mail">Adresse e-mail&nbsp;:</label>
-                                    <input type="mail" id="mail">
-                                </div>
-                                <div>
-                                    <label for="number">Téléphone (facultatif)&nbsp;:</label>
-                                    <input type="number">
-                                </div>
-                                <div>
-                                    <label for="motif">Sujet&nbsp;:</label>
-                                    <select name="motif" id="motif">
-                                        <option value="">Quel est votre motif ?</option>
-                                        <option value="visite">Organiser une visite</option>
-                                        <option value="devis">Question sur un devis</option>
-                                        <option value="dispo">Disponibilités</option>
-                                        <option value="equipements">Matériel et équipements</option>
-                                        <option value="other">Autre</option>
-                                    </select>
-                                </div>
-                        </fieldset>
-                       </form> 
-                </div>
-                <div class="coord_school">
-                    <h4>Coordonnées</h4>
-                        <p>location@itic-paris.fr</p>
-                        <p>01.00.00.00.00</p>
-                        <p>Du lundi au vendredi, 9h-18h</p>
-                </div>
-                <div class="map2">
-                    <iframe style="border-radius: 10px;  height:280px; width: 480px " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.0160689904505!2d2.3897890760475042!3d48.85790397133203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d8b04f6a0c3%3A0x1ceac17c26c68bf9!2sITIC%20Paris!5e0!3m2!1sfr!2sfr!4v1791538550231!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                <div class="cadre">
+                    <div class="coord_type">
+                        <h4 class="tt">Votre message</h4>
+                        <form>
+                            <fieldset>
+                                <legend>Votre message</legend>
+                                    <div>
+                                        <label for="name">Nom complet&nbsp;:</label>
+                                        <input type="text" id="name">
+                                    </div>
+                                    <div>
+                                        <label for="mail">Adresse e-mail&nbsp;:</label>
+                                        <input type="mail" id="mail">
+                                    </div>
+                                    <div>
+                                        <label for="number">Téléphone (facultatif)&nbsp;:</label>
+                                        <input type="number">
+                                    </div>
+                                    <div>
+                                        <label for="motif">Sujet&nbsp;:</label>
+                                        <select name="motif" id="motif">
+                                            <option value="">Quel est votre motif ?</option>
+                                            <option value="visite">Organiser une visite</option>
+                                            <option value="devis">Question sur un devis</option>
+                                            <option value="dispo">Disponibilités</option>
+                                            <option value="equipements">Matériel et équipements</option>
+                                            <option value="other">Autre</option>
+                                        </select>
+                                    </div>
+                            </fieldset>
+                        </form> 
+                        <h4>Coordonnées</h4>
+                            <p>location@itic-paris.fr</p>
+                            <p>01.00.00.00.00</p>
+                            <p>Du lundi au vendredi, 9h-18h</p>
+                    </div>
+
+                        
+                    <!-- </div> -->
+                
+                    <div class="map2">
+                        <iframe style="border-radius: 10px;  height:280px; width: 480px " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.0160689904505!2d2.3897890760475042!3d48.85790397133203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d8b04f6a0c3%3A0x1ceac17c26c68bf9!2sITIC%20Paris!5e0!3m2!1sfr!2sfr!4v1791538550231!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </div>
                 </div>
             </section>
         </main>
-
                <footer id="pied">
                 <section id="info0">
                     <div class="bande"></div>
