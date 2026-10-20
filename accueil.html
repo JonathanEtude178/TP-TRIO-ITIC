@@ -1,54 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Louer l'amphithéâtre · ITIC Paris</title>
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div>
-              <h1>
-                <img src="/asset/logoITIC.jpg" alt="">
-                LOCATION DE L'AMPHITHEATRE 
-              </h1>
-              <h2> <button>Réserver l'amphithéatre</button></h2>
-            </div>
 
-            <div>
-            
-                <a href="/amphitheatre.html">L'amphithéatre</a>
-                <a href="/equipements.html">Equipements</a>
-                <a href="/galerie.html">Galerie</a>
-                <a href="/tarifs.html">Tarifs</a>
-                <a href="/reservation.html">Réservation</a>
-                <a href="/acces.html">Acces</a>
-                <a href="contact.html">Contact</a>
-                <a href="/faq.html">Questions fréquentes</a>
-            </div>
+  <!-- Lien d'évitement : caché, visible au premier appui sur Tab -->
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
 
-        </nav>
-    </header>
-    <main>
+  <!-- EN-TÊTE (identique sur les 10 pages)-->
+  <header class="entete">
+    <div class="conteneur entete__interieur">
+      <a class="logo" href="index.html" >
+        <img src="/asset/logoITIC.jpg" alt="">
+        <span class="logo__sous-titre">Location de l'amphithéâtre</span>
+      </a>
+      <a class="bouton" href="reservation.html">Réserver l'amphithéâtre</a>
+    </div>
+  </header>
+
+  <!-- NAVIGATION PRINCIPALE (8 liens)-->
+  <nav class="menu" aria-label="Navigation principale">
+    <ul class="conteneur menu__liste">
+      <li><a href="index.html" aria-current="page">Accueil</a></li>
+      <li><a href="amphitheatre.html">L'amphithéâtre</a></li>
+      <li><a href="equipements.html">Équipements</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="tarifs.html">Tarifs</a></li>
+      <li><a href="acces.html">Accès</a></li>
+      <li><a href="faq.html">Questions fréquentes</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="contenu">
+
+    <!-- (photo + panneau blanc)-->
+    <section class="hero">
+      <img class="hero__photo" src="/asset/am.jpeg" width="1600" height="1200"
+           alt="Vue d'ensemble de l'amphithéâtre sous sa verrière, avec son parquet à chevrons et ses murs blancs">
+      <div class="conteneur hero__conteneur">
+        <div class="hero__panneau">
+          <h1>Louez l'amphithéâtre d'ITIC&nbsp;Paris</h1>
+          <p>Une salle lumineuse sous verrière, avec sonorisation, écrans, caméra et Wi-Fi. Vous arrivez, vous branchez, vous commencez.</p>
+          <div class="boutons">
+            <a class="bouton" href="reservation.html">Faire une demande de réservation</a>
+            <a class="bouton bouton--contour" href="amphitheatre.html">Découvrir la salle</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRÉSENTATION + FICHE RAPIDE -->
+    <section class="section">
+      <div class="conteneur deux-colonnes deux-colonnes--58-42">
+        <div class="texte">
+          <h2>Une salle prête à accueillir votre public</h2>
+          <p>L'amphithéâtre d'ITIC Paris est un grand volume lumineux, éclairé par une verrière. Son parquet à chevrons, ses murs blancs et son plafond anthracite créent un cadre sobre, adapté aux rencontres professionnelles.</p>
+          <p>Nous le louons à la demi-journée, à la journée ou en soirée. Il accueille des entreprises, des associations, des écoles et des organisateurs d'événements.</p>
+          <p><a href="amphitheatre.html">Voir les détails de la salle</a></p>
+        </div>
+        <dl class="fiche">
+          <div><dt>Capacité</dt><dd>Jusqu'à 80 personnes</dd></div>
+          <div><dt>Surface</dt><dd> 150 m²</dd></div>
+          <div><dt>Lumière</dt><dd>Naturelle, sous verrière</dd></div>
+          <div><dt>Accès</dt><dd>De plain-pied</dd></div>
+          <div><dt>Audiovisuel</dt><dd>Micros, écrans, caméra, Wi-Fi</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!--  TYPES D'ÉVÉNEMENTS -->
+    <section class="section section--gris">
+      <div class="conteneur">
+        <h2>Pour quels événements&nbsp;?</h2>
+        <dl class="lignes">
+          <div><dt>Conférences et colloques</dt><dd>Jusqu'à 80 personnes face à l'estrade, avec micros et écrans.</dd></div>
+          <div><dt>Formations et ateliers</dt><dd>Des tables en îlots pour faire travailler vos participants en petits groupes.</dd></div>
+          <div><dt>Séminaires d'entreprise</dt><dd>Un lieu calme et lumineux pour réunir vos équipes une journée entière.</dd></div>
+          <div><dt>Examens et concours</dt><dd>Des tables individuelles espacées, dans une salle silencieuse.</dd></div>
+          <div><dt>Soirées et rencontres</dt><dd>Un cocktail debout, de 18&nbsp;h à 23&nbsp;h, avec sonorisation et éclairage.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- TRIO DE PHOTOS -->
+    <section class="section">
+      <div class="conteneur">
+        <h2 class="visuellement-cache">La salle en photos</h2>
+        <div class="trio">
+          <img class="photo trio__grande" src="img/mini-19.jpg" width="640" height="480" loading="lazy"
+               alt="Les piliers de la salle et l'éclairage encastré au plafond anthracite">
+          <img class="photo" src="img/mini-22.jpg" width="640" height="480" loading="lazy"
+               alt="L'estrade au fond de la salle et ses écrans">
+          <img class="photo" src="img/mini-15.jpg" width="640" height="480" loading="lazy"
+               alt="Écrans muraux encadrés de plantes vertes">
+        </div>
+        <p><a href="galerie.html">Voir toutes les photos</a></p>
+      </div>
+    </section>
+
+    <!-- COMMENT RÉSERVER (3 étapes)  -->
+    <section class="section section--gris">
+      <div class="conteneur">
+        <h2>Comment réserver</h2>
+        <ol class="etapes">
+          <li>
+            <h3>Envoyez votre demande</h3>
+            <p>Remplissez le formulaire : date, nombre de personnes et besoins.</p>
+          </li>
+          <li>
+            <h3>Recevez un devis</h3>
+            <p>Nous vous répondons sous 48&nbsp;h ouvrées avec la disponibilité et un devis détaillé.</p>
+          </li>
+          <li>
+            <h3>Confirmez</h3>
+            <p>Après signature du devis, la salle est bloquée pour votre date.</p>
+          </li>
+        </ol>
+        <a class="bouton" href="reservation.html">Faire une demande de réservation</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- pied de la page -->
+   <footer class="pied">
+    <div class="conteneur">
+      <div class="chevrons" aria-hidden="true"></div>
+      <div class="pied__colonnes">
         <div>
-            <img src="/asset/am.jpeg" alt="">
-            <section>
-                <h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quibusdam dolorum reiciendis excepturi quia itaque exercitationem laboriosam voluptatum alias iusto?
-                    </p>
-                </h1>
-                <button>Faire une demande de réservation</button>
-                <button>Découvrir la salle</button>
-            </section>
+          <p class="pied__titre">ITIC Paris</p>
+          <p>Un amphithéâtre lumineux à louer pour vos conférences, formations et événements.</p>
         </div>
         <div>
-            
+          <p class="pied__titre">Pages</p>
+          <ul>
+            <li><a href="amphitheatre.html">L'amphithéâtre</a></li>
+            <li><a href="equipements.html">Équipements</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="reservation.html">Demande de réservation</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+          </ul>
         </div>
-       
-    </main>
-    
+        <div>
+          <p class="pied__titre">Nous joindre</p>
+          <ul>
+            <li><a href="mailto:location@itic-paris.fr">location@itic-paris.fr</a></li>
+            <li><a href="tel:+33100000000">01 00 00 00 00</a></li>
+            <li>Lundi–vendredi, 9&nbsp;h–18&nbsp;h</li>
+          </ul>
+        </div>
+      </div>
+      <p class="pied__copyright">© 2026 ITIC Paris. Tous droits réservés.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
